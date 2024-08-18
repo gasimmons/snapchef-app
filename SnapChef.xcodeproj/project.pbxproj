@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30EDD6AF2C71CC0700795F45 /* SnapChefApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */; };
+		30EDD6B12C71CC0700795F45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6B02C71CC0700795F45 /* ContentView.swift */; };
+		30EDD6B32C71CC0700795F45 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6B22C71CC0700795F45 /* Item.swift */; };
+		30EDD6B52C71CC0900795F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDD6B42C71CC0900795F45 /* Assets.xcassets */; };
+		30EDD6B82C71CC0900795F45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDD6B72C71CC0900795F45 /* Preview Assets.xcassets */; };
+		30EDD6C22C71CC0900795F45 /* SnapChefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6C12C71CC0900795F45 /* SnapChefTests.swift */; };
+		30EDD6CC2C71CC0900795F45 /* SnapChefUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6CB2C71CC0900795F45 /* SnapChefUITests.swift */; };
+		30EDD6CE2C71CC0900795F45 /* SnapChefUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6CD2C71CC0900795F45 /* SnapChefUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30EDD6BE2C71CC0900795F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EDD6A32C71CC0700795F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EDD6AA2C71CC0700795F45;
+			remoteInfo = SnapChef;
+		};
+		30EDD6C82C71CC0900795F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30EDD6A32C71CC0700795F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EDD6AA2C71CC0700795F45;
+			remoteInfo = SnapChef;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30EDD6AB2C71CC0700795F45 /* SnapChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChefApp.swift; sourceTree = "<group>"; };
+		30EDD6B02C71CC0700795F45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30EDD6B22C71CC0700795F45 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		30EDD6B42C71CC0900795F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30EDD6B72C71CC0900795F45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		30EDD6BD2C71CC0900795F45 /* SnapChefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EDD6C12C71CC0900795F45 /* SnapChefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChefTests.swift; sourceTree = "<group>"; };
+		30EDD6C72C71CC0900795F45 /* SnapChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30EDD6CB2C71CC0900795F45 /* SnapChefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChefUITests.swift; sourceTree = "<group>"; };
+		30EDD6CD2C71CC0900795F45 /* SnapChefUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChefUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30EDD6A82C71CC0700795F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6BA2C71CC0900795F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6C42C71CC0900795F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30EDD6A22C71CC0700795F45 = {
+			isa = PBXGroup;
+			children = (
+				30EDD6AD2C71CC0700795F45 /* SnapChef */,
+				30EDD6C02C71CC0900795F45 /* SnapChefTests */,
+				30EDD6CA2C71CC0900795F45 /* SnapChefUITests */,
+				30EDD6AC2C71CC0700795F45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30EDD6AC2C71CC0700795F45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30EDD6AB2C71CC0700795F45 /* SnapChef.app */,
+				30EDD6BD2C71CC0900795F45 /* SnapChefTests.xctest */,
+				30EDD6C72C71CC0900795F45 /* SnapChefUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30EDD6AD2C71CC0700795F45 /* SnapChef */ = {
+			isa = PBXGroup;
+			children = (
+				30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */,
+				30EDD6B02C71CC0700795F45 /* ContentView.swift */,
+				30EDD6B22C71CC0700795F45 /* Item.swift */,
+				30EDD6B42C71CC0900795F45 /* Assets.xcassets */,
+				30EDD6B62C71CC0900795F45 /* Preview Content */,
+			);
+			path = SnapChef;
+			sourceTree = "<group>";
+		};
+		30EDD6B62C71CC0900795F45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				30EDD6B72C71CC0900795F45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		30EDD6C02C71CC0900795F45 /* SnapChefTests */ = {
+			isa = PBXGroup;
+			children = (
+				30EDD6C12C71CC0900795F45 /* SnapChefTests.swift */,
+			);
+			path = SnapChefTests;
+			sourceTree = "<group>";
+		};
+		30EDD6CA2C71CC0900795F45 /* SnapChefUITests */ = {
+			isa = PBXGroup;
+			children = (
+				30EDD6CB2C71CC0900795F45 /* SnapChefUITests.swift */,
+				30EDD6CD2C71CC0900795F45 /* SnapChefUITestsLaunchTests.swift */,
+			);
+			path = SnapChefUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30EDD6AA2C71CC0700795F45 /* SnapChef */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EDD6D12C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChef" */;
+			buildPhases = (
+				30EDD6A72C71CC0700795F45 /* Sources */,
+				30EDD6A82C71CC0700795F45 /* Frameworks */,
+				30EDD6A92C71CC0700795F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapChef;
+			productName = SnapChef;
+			productReference = 30EDD6AB2C71CC0700795F45 /* SnapChef.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30EDD6BC2C71CC0900795F45 /* SnapChefTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EDD6D42C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChefTests" */;
+			buildPhases = (
+				30EDD6B92C71CC0900795F45 /* Sources */,
+				30EDD6BA2C71CC0900795F45 /* Frameworks */,
+				30EDD6BB2C71CC0900795F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30EDD6BF2C71CC0900795F45 /* PBXTargetDependency */,
+			);
+			name = SnapChefTests;
+			productName = SnapChefTests;
+			productReference = 30EDD6BD2C71CC0900795F45 /* SnapChefTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30EDD6C62C71CC0900795F45 /* SnapChefUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30EDD6D72C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChefUITests" */;
+			buildPhases = (
+				30EDD6C32C71CC0900795F45 /* Sources */,
+				30EDD6C42C71CC0900795F45 /* Frameworks */,
+				30EDD6C52C71CC0900795F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30EDD6C92C71CC0900795F45 /* PBXTargetDependency */,
+			);
+			name = SnapChefUITests;
+			productName = SnapChefUITests;
+			productReference = 30EDD6C72C71CC0900795F45 /* SnapChefUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30EDD6A32C71CC0700795F45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					30EDD6AA2C71CC0700795F45 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					30EDD6BC2C71CC0900795F45 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 30EDD6AA2C71CC0700795F45;
+					};
+					30EDD6C62C71CC0900795F45 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 30EDD6AA2C71CC0700795F45;
+					};
+				};
+			};
+			buildConfigurationList = 30EDD6A62C71CC0700795F45 /* Build configuration list for PBXProject "SnapChef" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30EDD6A22C71CC0700795F45;
+			productRefGroup = 30EDD6AC2C71CC0700795F45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EDD6AA2C71CC0700795F45 /* SnapChef */,
+				30EDD6BC2C71CC0900795F45 /* SnapChefTests */,
+				30EDD6C62C71CC0900795F45 /* SnapChefUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30EDD6A92C71CC0700795F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDD6B82C71CC0900795F45 /* Preview Assets.xcassets in Resources */,
+				30EDD6B52C71CC0900795F45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6BB2C71CC0900795F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6C52C71CC0900795F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30EDD6A72C71CC0700795F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDD6B12C71CC0700795F45 /* ContentView.swift in Sources */,
+				30EDD6B32C71CC0700795F45 /* Item.swift in Sources */,
+				30EDD6AF2C71CC0700795F45 /* SnapChefApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6B92C71CC0900795F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDD6C22C71CC0900795F45 /* SnapChefTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30EDD6C32C71CC0900795F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30EDD6CE2C71CC0900795F45 /* SnapChefUITestsLaunchTests.swift in Sources */,
+				30EDD6CC2C71CC0900795F45 /* SnapChefUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30EDD6BF2C71CC0900795F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EDD6AA2C71CC0700795F45 /* SnapChef */;
+			targetProxy = 30EDD6BE2C71CC0900795F45 /* PBXContainerItemProxy */;
+		};
+		30EDD6C92C71CC0900795F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30EDD6AA2C71CC0700795F45 /* SnapChef */;
+			targetProxy = 30EDD6C82C71CC0900795F45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		30EDD6CF2C71CC0900795F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30EDD6D02C71CC0900795F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30EDD6D22C71CC0900795F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnapChef/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30EDD6D32C71CC0900795F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SnapChef/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChef;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30EDD6D52C71CC0900795F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapChef.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnapChef";
+			};
+			name = Debug;
+		};
+		30EDD6D62C71CC0900795F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChefTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnapChef.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SnapChef";
+			};
+			name = Release;
+		};
+		30EDD6D82C71CC0900795F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnapChef;
+			};
+			name = Debug;
+		};
+		30EDD6D92C71CC0900795F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Gavin.SnapChefUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SnapChef;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30EDD6A62C71CC0700795F45 /* Build configuration list for PBXProject "SnapChef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EDD6CF2C71CC0900795F45 /* Debug */,
+				30EDD6D02C71CC0900795F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30EDD6D12C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChef" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EDD6D22C71CC0900795F45 /* Debug */,
+				30EDD6D32C71CC0900795F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30EDD6D42C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChefTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EDD6D52C71CC0900795F45 /* Debug */,
+				30EDD6D62C71CC0900795F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30EDD6D72C71CC0900795F45 /* Build configuration list for PBXNativeTarget "SnapChefUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30EDD6D82C71CC0900795F45 /* Debug */,
+				30EDD6D92C71CC0900795F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30EDD6A32C71CC0700795F45 /* Project object */;
+}
