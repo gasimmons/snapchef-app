@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30D8E3CD2DCF2D9300D6ACB2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3CC2DCF2D8E00D6ACB2 /* CameraView.swift */; };
+		30D8E3CF2DCF2DBF00D6ACB2 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3CE2DCF2DB800D6ACB2 /* RecipesView.swift */; };
+		30D8E3D12DCF2DD500D6ACB2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3D02DCF2DD200D6ACB2 /* SettingsView.swift */; };
+		30D8E3D32DCF2DF300D6ACB2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3D22DCF2DF100D6ACB2 /* RootView.swift */; };
 		30EDD6AF2C71CC0700795F45 /* SnapChefApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */; };
-		30EDD6B12C71CC0700795F45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6B02C71CC0700795F45 /* ContentView.swift */; };
 		30EDD6B32C71CC0700795F45 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EDD6B22C71CC0700795F45 /* Item.swift */; };
 		30EDD6B52C71CC0900795F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDD6B42C71CC0900795F45 /* Assets.xcassets */; };
 		30EDD6B82C71CC0900795F45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EDD6B72C71CC0900795F45 /* Preview Assets.xcassets */; };
@@ -35,9 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30D8E3CC2DCF2D8E00D6ACB2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		30D8E3CE2DCF2DB800D6ACB2 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		30D8E3D02DCF2DD200D6ACB2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		30D8E3D22DCF2DF100D6ACB2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		30EDD6AB2C71CC0700795F45 /* SnapChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapChefApp.swift; sourceTree = "<group>"; };
-		30EDD6B02C71CC0700795F45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30EDD6B22C71CC0700795F45 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		30EDD6B42C71CC0900795F45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30EDD6B72C71CC0900795F45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,8 +102,11 @@
 		30EDD6AD2C71CC0700795F45 /* SnapChef */ = {
 			isa = PBXGroup;
 			children = (
+				30D8E3D22DCF2DF100D6ACB2 /* RootView.swift */,
+				30D8E3D02DCF2DD200D6ACB2 /* SettingsView.swift */,
+				30D8E3CE2DCF2DB800D6ACB2 /* RecipesView.swift */,
+				30D8E3CC2DCF2D8E00D6ACB2 /* CameraView.swift */,
 				30EDD6AE2C71CC0700795F45 /* SnapChefApp.swift */,
-				30EDD6B02C71CC0700795F45 /* ContentView.swift */,
 				30EDD6B22C71CC0700795F45 /* Item.swift */,
 				30EDD6B42C71CC0900795F45 /* Assets.xcassets */,
 				30EDD6B62C71CC0900795F45 /* Preview Content */,
@@ -260,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30EDD6B12C71CC0700795F45 /* ContentView.swift in Sources */,
 				30EDD6B32C71CC0700795F45 /* Item.swift in Sources */,
+				30D8E3CF2DCF2DBF00D6ACB2 /* RecipesView.swift in Sources */,
+				30D8E3D12DCF2DD500D6ACB2 /* SettingsView.swift in Sources */,
+				30D8E3D32DCF2DF300D6ACB2 /* RootView.swift in Sources */,
 				30EDD6AF2C71CC0700795F45 /* SnapChefApp.swift in Sources */,
+				30D8E3CD2DCF2D9300D6ACB2 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
