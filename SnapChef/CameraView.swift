@@ -16,11 +16,28 @@ struct CameraView: View {
             if cameraManager.isAuthorized {
                 CameraPreview(session: cameraManager.session)
                     .ignoresSafeArea()
+
+                VStack {
+                    Spacer()
+                    Button(action: {
+                        cameraManager.capturePhoto()
+                    }) {
+                        Circle()
+                            .fill(Color.white)
+                            .frame(width: 70, height: 70)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.gray, lineWidth: 2)
+                            )
+                    }
+                    .padding(.bottom, 40)
+                }
             } else {
                 Color.black
                 Text("Camera Access Needed")
                     .foregroundColor(.white)
             }
+
         }
         .onAppear {
             cameraManager.checkPermissionAndSetup()

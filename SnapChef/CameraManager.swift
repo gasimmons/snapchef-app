@@ -7,9 +7,12 @@
 
 import AVFoundation
 import Combine
+import UIKit
 
 class CameraManager: NSObject, ObservableObject {
     let session = AVCaptureSession()
+    private let photoOutput = AVCapturePhotoOutput()
+    @Published var capturedImage: UIImage?
     @Published var isAuthorized = false
 
     func checkPermissionAndSetup() {
@@ -35,17 +38,45 @@ class CameraManager: NSObject, ObservableObject {
         guard let camera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
               let input = try? AVCaptureDeviceInput(device: camera),
               session.canAddInput(input)
-        else { return }
+        else {
+            return
+        }
 
         session.beginConfiguration()
         session.addInput(input)
 
-        let output = AVCaptureVideoDataOutput()
-        if session.canAddOutput(output) {
-            session.addOutput(output)
+        if session.canAddOutput(photoOutput) {
+            session.addOutput(photoOutput)
         }
 
         session.commitConfiguration()
-        session.startRunning()
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            print("Startin camera session")
+            self.session.startRunning()
+        }
+    }
+
+    func capturePhoto() {
+        print("📸 capturePhoto() called")
+        let settings = AVCapturePhotoSettings()
+        photoOutput.capturePhoto(with: settings, delegate: self)
+    }
+}
+
+extension CameraManager: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput,
+                     didFinishProcessingPhoto photo: AVCapturePhoto,
+                     error: Error?) {
+        guard let data = photo.fileDataRepresentation(),
+              let image = UIImage(data: data) else {
+            print("❌ Failed to convert photo data")
+            return
+        }
+
+        DispatchQueue.main.async {
+            self.capturedImage = image
+            print("📸 Photo captured")
+        }
     }
 }
