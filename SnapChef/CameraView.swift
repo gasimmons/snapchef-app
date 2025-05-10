@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct CameraView: View {
     var body: some View {
@@ -14,6 +15,20 @@ struct CameraView: View {
             Text("📷 Camera")
                 .foregroundColor(.white)
                 .font(.largeTitle)
+        }
+        .onAppear {
+            requestCameraAuth()
+        }
+    }
+    
+    private func requestCameraAuth() {
+        AVCaptureDevice.requestAccess(for: .video) {granted in
+            if granted {
+                print("Camera access granted")
+            }
+            else {
+                print("Camera access denied")
+            }
         }
     }
 }
