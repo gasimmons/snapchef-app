@@ -9,26 +9,21 @@ import SwiftUI
 import AVFoundation
 
 struct CameraView: View {
+    @StateObject private var cameraManager = CameraManager()
+
     var body: some View {
         ZStack {
-            Color.black
-            Text("📷 Camera")
-                .foregroundColor(.white)
-                .font(.largeTitle)
+            if cameraManager.isAuthorized {
+                CameraPreview(session: cameraManager.session)
+                    .ignoresSafeArea()
+            } else {
+                Color.black
+                Text("Camera Access Needed")
+                    .foregroundColor(.white)
+            }
         }
         .onAppear {
-            requestCameraAuth()
-        }
-    }
-    
-    private func requestCameraAuth() {
-        AVCaptureDevice.requestAccess(for: .video) {granted in
-            if granted {
-                print("Camera access granted")
-            }
-            else {
-                print("Camera access denied")
-            }
+            cameraManager.checkPermissionAndSetup()
         }
     }
 }
