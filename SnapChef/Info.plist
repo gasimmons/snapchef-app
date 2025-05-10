@@ -1,7 +1,3 @@
-//
-//  Info.plist
-//  SnapChef
-//
-//  Created by Gavin Simmons on 5/10/25.
-//
-
+{
+	"NSCameraUsageDescription" = "Snapchef takes images of the fridge to return meal ideas";
+}
