@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307A99D62DD588C8008B2B88 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307A99D52DD588C5008B2B88 /* API.swift */; };
 		30D8E3CD2DCF2D9300D6ACB2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3CC2DCF2D8E00D6ACB2 /* CameraView.swift */; };
 		30D8E3CF2DCF2DBF00D6ACB2 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3CE2DCF2DB800D6ACB2 /* RecipesView.swift */; };
 		30D8E3D12DCF2DD500D6ACB2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D8E3D02DCF2DD200D6ACB2 /* SettingsView.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307A99D52DD588C5008B2B88 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		30D8E3CC2DCF2D8E00D6ACB2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		30D8E3CE2DCF2DB800D6ACB2 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		30D8E3D02DCF2DD200D6ACB2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		30EDD6AD2C71CC0700795F45 /* SnapChef */ = {
 			isa = PBXGroup;
 			children = (
+				307A99D52DD588C5008B2B88 /* API.swift */,
 				30D8E3D72DCFAA5C00D6ACB2 /* CameraPreview.swift */,
 				30D8E3D52DCFAA5500D6ACB2 /* CameraManager.swift */,
 				30D8E3D42DCF39F500D6ACB2 /* Info.plist */,
@@ -284,6 +287,7 @@
 				30D8E3D12DCF2DD500D6ACB2 /* SettingsView.swift in Sources */,
 				30D8E3D32DCF2DF300D6ACB2 /* RootView.swift in Sources */,
 				30EDD6AF2C71CC0700795F45 /* SnapChefApp.swift in Sources */,
+				307A99D62DD588C8008B2B88 /* API.swift in Sources */,
 				30D8E3CD2DCF2D9300D6ACB2 /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

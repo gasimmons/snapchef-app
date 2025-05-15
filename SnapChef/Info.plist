@@ -1,3 +1,6 @@
 {
+	"NSAppTransportSecurity" = {
+		"NSAllowsArbitraryLoads" = YES;
+	};
 	"NSCameraUsageDescription" = "Snapchef takes images of the fridge to return meal ideas";
 }

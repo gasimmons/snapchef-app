@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct RecipesView: View {
+    @State private var recipes: [Recipe] = []
+
     var body: some View {
         NavigationView {
-            List {
-                Text("🍕 Pizza")
-                Text("🍣 Sushi")
+            List(recipes) { recipe in
+                VStack(alignment: .leading) {
+                    Text(recipe.title)
+                        .font(.headline)
+                    Text(recipe.ingredients)
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
             }
             .navigationTitle("Saved Recipes")
+            .onAppear {
+                API.fetchRecipes { fetched in
+                    self.recipes = fetched
+                }
+            }
         }
     }
 }
