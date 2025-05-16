@@ -46,6 +46,14 @@ struct CameraView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .padding()
 
+                        Button("Scan") {
+                            // Run CV
+                            cameraManager.capturedImage = nil
+                        }
+                        .padding()
+                        .background(Color.white)
+                        .cornerRadius(10)
+                        
                         Button("Dismiss") {
                             cameraManager.capturedImage = nil
                         }

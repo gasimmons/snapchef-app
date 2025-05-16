@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecipesView: View {
+    var userId: Int
     @State private var recipes: [Recipe] = []
 
     var body: some View {
@@ -23,7 +24,7 @@ struct RecipesView: View {
             }
             .navigationTitle("Saved Recipes")
             .onAppear {
-                API.fetchRecipes { fetched in
+                API.fetchRecipes(for: userId) { fetched in
                     self.recipes = fetched
                 }
             }
