@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct RootView: View {
+    let userId: Int
     @State private var selectedTab = 1
+    
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            RecipesView().tag(0)
+            RecipesView(userId: userId).tag(0)
             CameraView().tag(1)
             SettingsView().tag(2)
         }

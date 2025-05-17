@@ -10,6 +10,7 @@ import SwiftData
 
 @main
 struct SnapChefApp: App {
+    @State private var userId: Int? = nil
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -25,7 +26,7 @@ struct SnapChefApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            AuthView()
         }
     }
 }
